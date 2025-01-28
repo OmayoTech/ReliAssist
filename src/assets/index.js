@@ -4,7 +4,7 @@ import Intro_Image from "./Intro_Image.png";
 import Line1 from "./Line1.png";
 import logo2 from "./logo2.png";
 import Twitter from "./Twitter.png";
-import Telegram from "./Telegram.png";
+import linkedin from "./linkedin.png";
 import Facebook from "./Facebook.png";
 import Instagram from "./Instagram.png";
 import closeIcon from "./closeIcon.png";
@@ -17,7 +17,7 @@ export {
   Line1,
   logo2,
   Twitter,
-  Telegram,
+  linkedin,
   Facebook,
   Instagram,
   closeIcon,

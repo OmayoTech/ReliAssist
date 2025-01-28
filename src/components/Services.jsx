@@ -6,9 +6,9 @@ const Services = () => {
       </h1>
 
       <div className=" gap-4 p-4 px-4 md:px-[150px] mt-[2%]">
-        <div className="flex-row md:flex w-full gap-4 mb-4 md:mb-0">
-          <div className="bg-[#310252] rounded-lg mb-4 md:w-[680px] w-[350px] h-[300px]  md:h-[460px]">
-            <div className="flex items-end bg-cover hover:bg-none   bg-[url('/src/assets/customer.png')] bg-no-repeat hover:text-white text-transparent  text-start p-6 rounded-lg md:w-[680px] w-[350px] h-[300px]  md:h-[460px]">
+        <div className="flex-row md:flex  w-full gap-4 mb-4 md:mb-0">
+          <div className="bg-[#310252] rounded-lg mb-4 md:w-[680px] w-full h-[300px]  md:h-[460px]">
+            <div className="flex items-end w-full bg-cover hover:bg-none   bg-[url('/src/assets/customer.png')] bg-no-repeat hover:text-white text-transparent  text-start p-6 rounded-lg md:w-[680px] w-[350px] h-[300px]  md:h-[460px]">
               <div>
                 <h1 className="font-Rale font-bold text-[20px] md:text-[40px]  mb-2">
                   Customer Service support
@@ -112,8 +112,8 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#310252] rounded-lg md:w-[505px] w-[350px] h-[300px]   md:h-[460px]">
-            <div className="flex items-end  hover:bg-none bg-cover  bg-[url('/src/assets/Technical.png')] bg-no-repeat hover:text-white text-transparent  text-start p-6 rounded-lg md:w-[505px] w-[350px] h-[300px]   md:h-[460px]">
+          <div className="bg-[#310252] rounded-lg md:w-[505px] w-full h-[300px]   md:h-[460px]">
+            <div className="flex items-end w-full  hover:bg-none bg-cover  bg-[url('/src/assets/Technical.png')] bg-no-repeat hover:text-white text-transparent  text-start p-6 rounded-lg md:w-[505px] w-[350px] h-[300px]   md:h-[460px]">
               <div className="text-start">
                 <h1 className="font-Rale font-bold text-[20px] md:text-[40px]  mb-2">
                   Technical support
@@ -218,8 +218,8 @@ const Services = () => {
           </div>
         </div>
         <div className="w-full gap-4">
-          <div className="bg-[#310252] rounded-lg md:w-[1200px] w-[350px] cursor-pointer">
-            <div className="flex items-end hover:bg-none bg-cover   bg-[url('/src/assets/Social.png')] bg-no-repeat hover:text-white text-transparent p-6 rounded-lg w-[350px] md:w-[1200px] h-[300px] md:h-[460px] mb-4 cursor-pointer">
+          <div className="bg-[#310252] rounded-lg md:w-[1200px] w-full cursor-pointer">
+            <div className="flex items-end hover:bg-none bg-cover w-full   bg-[url('/src/assets/Social.png')] bg-no-repeat hover:text-white text-transparent p-6 rounded-lg w-[350px] md:w-[1200px] h-[300px] md:h-[460px] mb-4 cursor-pointer">
               <div className="text-start">
                 <h1 className="font-Rale font-bold text-[20px] md:text-[40px]  mb-2">
                   Social Media & Content Management
@@ -324,8 +324,8 @@ const Services = () => {
           </div>
         </div>
         <div className="flex-row md:flex w-full gap-4">
-          <div className="bg-[#310252] rounded-lg mb-4 md:w-[505px] w-[350px] h-[300px]   md:h-[460px]">
-            <div className="flex items-end bg-cover  hover:bg-none bg-[url('/src/assets/Admin.png')] bg-no-repeat hover:text-white text-transparent p-6 rounded-lg md:w-[505px] w-[350px] h-[300px]   md:h-[460px]">
+          <div className="bg-[#310252] rounded-lg mb-4 md:w-[505px] w-full h-[300px]   md:h-[460px]">
+            <div className="flex items-end bg-cover  hover:bg-none bg-[url('/src/assets/Admin.png')] bg-no-repeat hover:text-white text-transparent p-6 rounded-lg w-full md:w-[505px] w-[350px] h-[300px]   md:h-[460px]">
               <div className="text-start">
                 <h1 className="font-Rale font-bold text-[20px] md:text-[40px]  mb-2">
                   Administrative Support
@@ -428,8 +428,8 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#310252] rounded-lg md:w-[680px] w-[350px] h-[300px] md:h-[460px]">
-            <div className="flex items-end bg-cover  hover:bg-none bg-[url('/src/assets/Specialized.png')] bg-no-repeat hover:text-white text-transparent p-6 rounded-lg  md:w-[680px] w-[350px] h-[300px] md:h-[460px]">
+          <div className="bg-[#310252] rounded-lg md:w-[680px] w-full h-[300px] md:h-[460px]">
+            <div className="flex items-end bg-cover  hover:bg-none bg-[url('/src/assets/Specialized.png')] bg-no-repeat hover:text-white text-transparent p-6 rounded-lg w-full  md:w-[680px] w-[350px] h-[300px] md:h-[460px]">
               <div className="text-start">
                 <h1 className="font-Rale font-bold text-[20px] md:text-[40px]  mb-2">
                   Specialized Project Assistance

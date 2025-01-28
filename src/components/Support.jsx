@@ -18,7 +18,7 @@ const Support = () => {
       </p>
       <div className="gap-4 p-4 px-4 md:px-[150px] mt-[2%] ">
         <div className="flex-row  md:flex w-full gap-4 mb-4 ">
-          <div className="bg-[#F9F0FF]   p-6 rounded-lg w-[350px] md:w-[390px]  h-[214px] mb-4 md:mb-0 ">
+          <div className="bg-[#F9F0FF]   p-6 rounded-lg w-full md:w-[390px]  h-[214px] mb-4 md:mb-0 ">
             <img src={trusted} alt="" className="mb-2" />
             <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
               Trusted and Vetted Talent
@@ -28,7 +28,7 @@ const Support = () => {
               they bring value and professionalism to your business.
             </p>
           </div>
-          <div className="bg-[#F0FFFC]  p-6 rounded-lg w-[350px] md:w-[786px]   h-[214px]">
+          <div className="bg-[#F0FFFC]  p-6 rounded-lg w-full md:w-[786px]   h-[214px]">
             <img src={support} alt="" className="mb-2" />
             <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
               Customized Support
@@ -40,7 +40,7 @@ const Support = () => {
           </div>
         </div>
         <div className="flex-row md:flex w-full gap-4 mb-4">
-          <div className="bg-[#F9F0FF]  p-6 rounded-lg  w-[350px] md:w-[588px] h-[218px] mb-4">
+          <div className="bg-[#F9F0FF]  p-6 rounded-lg  w-full md:w-[588px] h-[218px] mb-4">
             <img src={effortless} alt="" className="mb-2" />
             <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
               Effortless Management
@@ -51,7 +51,7 @@ const Support = () => {
               place.
             </p>
           </div>
-          <div className="bg-[#F9F0FF]  p-6 rounded-lg  w-[350px] md:w-[588px] h-[218px]">
+          <div className="bg-[#F9F0FF]  p-6 rounded-lg  w-full md:w-[588px] h-[218px]">
             <img src={assistance} alt="" className="mb-2" />
             <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
               Comprehensive Assistance

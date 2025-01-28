@@ -3,7 +3,7 @@ import spiral from "../../src/assets/spiral.png";
 
 const About = () => {
   return (
-    <div className="h-[1100px] md:h-[800px] mb-[12%]">
+    <div className="h-[1100px] md:h-[800px] xl:h-[900px] mb-[12%]">
       <h1 className=" font-Rale font-bold text-[20px] md:text-[32px] text-center mb-[15px]">
         How ReliAssist works
       </h1>
@@ -15,8 +15,8 @@ const About = () => {
           <img src={Rectangle} alt="" className="w-[50px] md:w-[100px]" />
         </div>
       </div>
-      <div className="flex-row md:flex justify-evenly  md:px-[110px] w-full ">
-        <div className="w-[360px] mb-6 px-6">
+      <div className="flex-row md:flex md:justify-evenly   md:px-[110px] w-full ">
+        <div className="md:w-[360px] mb-6 px-10">
           <h1 className="font-Rale font-bold text-[25px] md:text-[40px]  mb-2">
             01
           </h1>
@@ -28,10 +28,10 @@ const About = () => {
             goals.
           </p>
         </div>
-        <div className="flex items-center hidden md:block">
+        <div className="flex items-center  hidden md:block">
           <img src={spiral} alt="" className="w-[99px] h-[89px] " />
         </div>
-        <div className="w-[360px] mb-6 px-6">
+        <div className="md:w-[360px] mb-6 px-10">
           <h1 className="font-Rale font-bold text-[25px] md:text-[40px]  mb-2">
             02
           </h1>
@@ -46,7 +46,7 @@ const About = () => {
         <div className="flex items-center hidden md:block">
           <img src={spiral} alt="" className="w-[89px] h-[89px]" />
         </div>
-        <div className="w-[360px] mb-6 px-6">
+        <div className="md:w-[360px] mb-6 px-10">
           <h1 className="font-Rale font-bold text-[25px] md:text-[40px]  mb-2">
             03
           </h1>
@@ -60,7 +60,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex-row md:flex justify-evenly  md:px-[100px] w-full mt-[4%] ">
-        <div className="w-[360px] mb-6 px-6">
+        <div className="md:w-[360px] mb-6 px-10">
           <h1 className="font-Rale font-bold text-[25px] md:text-[40px]  mb-2">
             04
           </h1>
@@ -75,7 +75,7 @@ const About = () => {
         <div className="flex items-center hidden md:block">
           <img src={spiral} alt="" className="w-[89px] h-[89px] " />
         </div>
-        <div className="w-[360px] mb-6 px-6">
+        <div className="md:w-[360px] mb-6 px-10">
           <h1 className="font-Rale font-bold text-[25px] md:text-[40px]  mb-2">
             05
           </h1>
@@ -90,7 +90,7 @@ const About = () => {
         <div className="flex items-center hidden md:block">
           <img src={spiral} alt="" className="w-[89px] h-[89px] " />
         </div>
-        <div className="w-[360px] px-6"></div>
+        <div className="md:w-[360px] px-6"></div>
       </div>
       <div className="flex justify-center">
         <a href="https://zfrmz.com/igfe5iy9VPWbgkjIaJ5P">

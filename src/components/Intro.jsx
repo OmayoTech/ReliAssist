@@ -3,18 +3,22 @@ const Intro = () => {
   return (
     <div className="flex-col-reverse flex md:flex-row gap-10 justify-evenly px-4 md:px-[200px] mt-[8%] mb-[14%]">
       <div className="w-full md:w-[40%] flex justify-center">
-        <img src={Intro_Image} alt="hero" className="w-[300px] md:w-[500px]" />
+        <img
+          src={Intro_Image}
+          alt="hero"
+          className="max-w-full w-[300px] md:w-[600px] md:h-[450px]"
+        />
       </div>
       <div className="w-full md:w-[60%] py-10 md:py-20 mb-10 ">
-        <h1 className="mt-4 font-Rale font-semibold text-[20px] md:text-[35px]">
+        <h1 className="mt-4 font-Rale font-semibold text-[20px] md:text-[35px] xl:text-[30px]">
           A Reliable Partner for Your Business
         </h1>
         <div className="flex items-center gap-[50px]">
-          <h2 className=" font-Rale font-semibold text-[20px] md:text-[35px]">
+          <h2 className=" font-Rale font-semibold text-[20px] md:text-[35px] xl:text-[30px]">
             Success
           </h2>
           <span>
-            <img src={Line1} alt="" className="w-[200px] md:w-auto" />
+            <img src={Line1} alt="" className="w-[200px] md:w-auto " />
           </span>
         </div>
 
