@@ -20,15 +20,17 @@ const Footer = () => {
             <Link to="/service">
               <p>Services</p>
             </Link>
-            <a href="https://zfrmz.com/igfe5iy9VPWbgkjIaJ5P">
+            <Link to="/contact">
               <p>Contact us</p>
-            </a>
+            </Link>
           </div>
           <div className="font-Rale font-semibold text-[16px] mb-4">
-            <p>Pricing</p>
-            <Link to="/service">
-              <p>Services</p>
+            <Link to="/pricing">
+              <p>Pricing</p>
             </Link>
+
+            <p>Blogs</p>
+
             <p>Testimonials</p>
           </div>
         </div>
@@ -65,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="font-Rale font-semibold text-[16px]">
+      <p className="font-Rale font-semibold text-[16px] md:mt-0 mt-[-25%]">
         Powered By Omoayo Tech
       </p>
     </div>

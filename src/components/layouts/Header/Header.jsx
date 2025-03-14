@@ -6,7 +6,9 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="left-0 right-0 top-0  flex justify-between items-center md:px-[100px] md:py-2 px-4 py-6">
-      <img src={logo} alt="" className="w-[62px] cursor-pointer" />
+      <Link to="/home">
+        <img src={logo} alt="" className="w-[62px] cursor-pointer" />
+      </Link>
       <div className="hidden left-0 right-0 top-0 md:flex justify-end items-center gap-10  py-6 ">
         <div className="flex items-center justify-center gap-10 text-lg  list-none">
           <Link

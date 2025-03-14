@@ -1,8 +1,9 @@
 import Footer from "../../layouts/Footer/Footer";
 import Header from "../../layouts/Header/Header";
+import OurService from "../../OurService";
 import ServiceHero from "../../ServiceHero";
 import ServicePersonal from "../../ServicePersonal";
-import Services from "../../Services";
+
 import ServiceStarted from "../../ServiceStarted";
 
 const ServicePage = () => {
@@ -10,7 +11,7 @@ const ServicePage = () => {
     <div>
       <Header />
       <ServiceHero />
-      <Services />
+      <OurService />
       <ServicePersonal />
       <ServiceStarted />
       <Footer />

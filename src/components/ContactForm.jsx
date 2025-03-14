@@ -1,85 +1,139 @@
+import { useState } from "react";
 import Email_icon from "../../src/assets/Email_icon.png";
 import Address_icon from "../../src/assets/Address_icon.png";
 import form_mask from "../../src/assets/form_mask.png";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    businessName: "",
+    phone: "",
+    aboutUs: "",
+    reason: "",
+    details: "",
+    url: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    alert("Form submitted successfully!"); // Add success alert
+    setFormData({
+      name: "",
+      email: "",
+      businessName: "",
+      phone: "",
+      aboutUs: "",
+      reason: "",
+      details: "",
+      url: "",
+    }); // Reset form after submission
+  };
+
   return (
     <div className="h-[1100px] md:h-[680px] flex flex-col md:flex-row md:justify-center w-full md:mb-[4%]  md:px-[160px] md:gap-20">
       <div className="w-full basis-3/5 md:mb-0 mb-[10%]">
         <h1 className="mb-6 px-4 text-[20px] md:text-[36px] font-Rale font-semibold">
           Contact Form
         </h1>
-        <form className="space-y-4 px-4">
+        <form
+          className="space-y-4 px-4"
+          name="ReliAssistForm"
+          onSubmit={handleSubmit}
+          data-netlify="true"
+        >
+          <input type="hidden" name="form-name" value="ReliAssist" />
           <div>
             <input
               type="text"
-              id="name"
               name="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Name"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              required
             />
           </div>
           <div>
             <input
               type="email"
-              id="email"
               name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Email"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px] "
+              required
             />
           </div>
           <div>
             <input
               type="text"
-              id="businessName"
               name="businessName"
+              value={formData.businessName}
+              onChange={handleChange}
               placeholder="Business Name"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              required
             />
           </div>
           <div>
             <input
               type="tel"
-              id="phone"
               name="phone"
+              value={formData.phone}
+              onChange={handleChange}
               placeholder="Phone Number"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              required
             />
           </div>
           <div>
             <input
               type="text"
-              id="reason"
-              name="reason"
+              name="aboutUs"
+              value={formData.aboutUs}
+              onChange={handleChange}
               placeholder="How did you hear about us?"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              required
             />
           </div>
           <div>
             <input
               type="text"
-              id="reason"
               name="reason"
+              value={formData.reason}
+              onChange={handleChange}
               placeholder="Reason for Enquiry"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              required
             />
           </div>
           <div>
             <textarea
-              id="details"
               name="details"
               rows="4"
+              value={formData.details}
+              onChange={handleChange}
               placeholder="Tell us about your need"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              required
             ></textarea>
           </div>
           <div>
             <input
               type="url"
-              id="url"
               name="url"
+              value={formData.url}
+              onChange={handleChange}
               placeholder="Website URL/LinkedIn URL"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              required
             />
           </div>
           <div className="flex justify-start">
@@ -108,7 +162,7 @@ const ContactForm = () => {
               Email Now
             </p>
             <p className="font-Rale font-Light text-[12px] md:text-[14px] ">
-              admin@reliassist.com
+              hello@reliassist.co
             </p>
           </div>
         </div>

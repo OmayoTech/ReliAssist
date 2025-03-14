@@ -15,7 +15,9 @@ const ServiceHero = () => {
       <div className="flex flex-col md:flex-row md:w-full md:items-center md:px-[160px] md:gap-10 md:justify-center  px-4 mt-10 md:mt-[7%]">
         <div className="flex flex-col items-center md:items-start  md:w-full py-10 md:py-20  md:basis-3/5">
           <h1 className="text-center md:text-start text-[40px] md:text-[72px] leading-[45px] md:leading-[79px] font-Rale font-semibold text-secondary">
-            Virtual Assistance to Meet Every Business Need
+            Virtual Assistance
+            <br /> to Meet Every
+            <br /> Business Need
           </h1>
         </div>
         <div className="flex justify-center md:w-full md:basis-1/2 ">
