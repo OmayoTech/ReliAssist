@@ -4,36 +4,14 @@ import Address_icon from "../../src/assets/Address_icon.png";
 import form_mask from "../../src/assets/form_mask.png";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    businessName: "",
-    phone: "",
-    aboutUs: "",
-    reason: "",
-    details: "",
-    url: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    alert("Form submitted successfully!"); // Add success alert
-    setFormData({
-      name: "",
-      email: "",
-      businessName: "",
-      phone: "",
-      aboutUs: "",
-      reason: "",
-      details: "",
-      url: "",
-    }); // Reset form after submission
-  };
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [business, setBusiness] = useState();
+  const [tel, setTel] = useState();
+  const [about, setAbout] = useState();
+  const [reason, setReason] = useState();
+  const [message, setMessage] = useState();
+  const [url, setUrl] = useState();
 
   return (
     <div className="h-[1100px] md:h-[680px] flex flex-col md:flex-row md:justify-center w-full md:mb-[4%]  md:px-[160px] md:gap-20">
@@ -43,19 +21,20 @@ const ContactForm = () => {
         </h1>
         <form
           className="space-y-4 px-4"
-          name="ReliAssistForm"
-          onSubmit={handleSubmit}
+          name="contact"
+          method="POST"
           data-netlify="true"
         >
-          <input type="hidden" name="form-name" value="ReliAssist" />
+          <input type="hidden" name="form-name" value="contact" />
           <div>
             <input
               type="text"
               name="name"
-              value={formData.name}
-              onChange={handleChange}
+              id="name"
               placeholder="Name"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               required
             />
           </div>
@@ -63,10 +42,11 @@ const ContactForm = () => {
             <input
               type="email"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
+              id="email"
               placeholder="Email"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px] "
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -74,10 +54,11 @@ const ContactForm = () => {
             <input
               type="text"
               name="businessName"
-              value={formData.businessName}
-              onChange={handleChange}
+              id="businessName"
               placeholder="Business Name"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              value={business}
+              onChange={(e) => setBusiness(e.target.value)}
               required
             />
           </div>
@@ -85,10 +66,11 @@ const ContactForm = () => {
             <input
               type="tel"
               name="phone"
-              value={formData.phone}
-              onChange={handleChange}
+              id="phone"
               placeholder="Phone Number"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              value={tel}
+              onChange={(e) => setTel(e.target.value)}
               required
             />
           </div>
@@ -96,10 +78,11 @@ const ContactForm = () => {
             <input
               type="text"
               name="aboutUs"
-              value={formData.aboutUs}
-              onChange={handleChange}
+              id="aboutUs"
               placeholder="How did you hear about us?"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              value={about}
+              onChange={(e) => setAbout(e.target.value)}
               required
             />
           </div>
@@ -107,21 +90,24 @@ const ContactForm = () => {
             <input
               type="text"
               name="reason"
-              value={formData.reason}
-              onChange={handleChange}
+              id="reason"
               placeholder="Reason for Enquiry"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              value={reason}
+              onChange={(e) => setReason(e.target.value)}
               required
             />
           </div>
           <div>
             <textarea
-              name="details"
+              type="message"
+              name="message"
+              id="message"
               rows="4"
-              value={formData.details}
-              onChange={handleChange}
               placeholder="Tell us about your need"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
           </div>
@@ -129,10 +115,11 @@ const ContactForm = () => {
             <input
               type="url"
               name="url"
-              value={formData.url}
-              onChange={handleChange}
+              id="url"
               placeholder="Website URL/LinkedIn URL"
               className="w-full border-2 border-#EAEAEA py-2 px-2 font-Rale font-Regular text-[16px]"
+              value={url}
+              onChange={(e) => setUrl(e.target.value)}
               required
             />
           </div>

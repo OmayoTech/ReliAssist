@@ -1,77 +1,102 @@
-import help from "../../src/assets/help.png";
-import complaint from "../../src/assets/complaint.png";
-import order from "../../src/assets/order.png";
-import feedback from "../../src/assets/feedback.png";
-import live from "../../src/assets/live.png";
-import ornament_sup from "../../src/assets/ornament_sup.png";
+import { support1, support2, support3, support4, support5 } from "../assets";
 
 const CustomerSupport = () => {
   return (
-    <div className="h-[1350px] md:h-[899px] bg-[#310252] py-14 md:mb-[8%] mb-[18%] md:mt-[8%] mt-[18%]">
-      <div className="absolute md:mt-[-3%] mt-[-13%]">
-        <img src={ornament_sup} alt="" className="w-[70px] md:w-[150px] " />
-      </div>
-      <h1 className="text-white font-Rale font-bold text-[16px] md:text-[32px] text-center md:mt-[2%] md:mb-[3px] mb-[15px]">
-        Our Customer Service Support
+    <div className="md:mb-[12%] md:mt-0 mt-[-60%]">
+      <h1 className="text-center font-bold text-[25px] md:text-[46px]   ">
+        Customer Service{" "}
+        <span className=" text-transparent bg-clip-text bg-gradient-to-r from-[rgba(106,13,173,1)] to-[rgba(245,91,195,1)]">
+          Support
+        </span>
       </h1>
-      <p className="text-white font-bold font-Rale text-[16px] md:text-[32px] text-center">
-        Services Include:
-      </p>
-      <div className="gap-4 p-4 px-4 md:px-[150px] md:mt-[4%] mt-[2%] ">
-        <div className="flex-row  md:flex w-full gap-4 mb-4 ">
-          <div className="bg-[#F0FFFC]   p-6 rounded-lg w-full md:w-[384px] md:h-[263px]  h-[214px] mb-4 md:mb-0 ">
-            <img src={help} alt="" className="mb-6 w-[36px] h-[36px]" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              Customer Inquiries & Help Desk Management
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Prompt, courteous responses to customer questions, ensuring they
-              feel valued and informed.
-            </p>
+      <div className="flex items-center justify-center px-8">
+        <div className="grid md:grid-cols-2 grid-rows-3 md:gap-20 p-4  md:mt-20 mt-10 text-start ">
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10 ">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={support1} className="md:w-[60px] w-[50px] " alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  Customer Inquiries & Help Desk Management
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Prompt, courteous responses to customer questions, ensuring
+                  they feel valued and
+                  <br /> informed.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="bg-[#F0FFFC]  p-6 rounded-lg w-full md:w-[384px] md:h-[263px] h-[214px] md:mb-0 mb-4">
-            <img src={complaint} alt="" className="mb-6" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              Complaint Resolution
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Handling issues professionally and efficiently to maintain trust
-              and satisfaction.
-            </p>
+
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={support2} className="w-[60px] w-[50px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  Order Processing & Tracking Assistance
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Managing orders, tracking updates, and handling order-related
+                  questions to enhance customer convenience.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="bg-[#F0FFFC]  p-6 rounded-lg w-full md:w-[384px] md:h-[263px]   h-[214px]">
-            <img src={order} alt="" className="mb-6" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              Order Processing & Tracking Assistance
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Managing orders, tracking updates, and handling order-related
-              questions to enhance customer convenience.
-            </p>
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={support3} className="w-[60px] w-[50px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  Complaint Resolution
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Handling issues professionally and efficiently to maintain
+                  trust and satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={support4} className="w-[60px] w-[50px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  Customer Feedback Collection
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Gathering feedback to help you continuously improve products
+                  and services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={support5} className="w-[60px] w-[50px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  Live Chat Support
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Real-time support for customers needing quick assistance,
+                  reducing wait times and enhancing satisfaction.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex-row md:flex w-full gap-4 mb-4">
-          <div className="bg-[#FFF0FC]  p-6 rounded-lg  w-full md:w-[588px] md:h-[263px] h-[218px] mb-4">
-            <img src={feedback} alt="" className="mb-6 w-[36px] h-[36px]" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              Customer Feedback Collection
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Gathering feedback to help you continuously improve products and
-              services.
-            </p>
-          </div>
-          <div className="bg-[#FFF0FC]  p-6 rounded-lg  w-full md:w-[588px] md:h-[263px] h-[218px]">
-            <img src={live} alt="" className="mb-6" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              Live Chat Support
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Real-time support for customers needing quick assistance, reducing
-              wait times and enhancing satisfaction.
-            </p>
-          </div>
-        </div>
+      </div>
+      <div className="mt-[5%]">
+        <h1 className="text-center font-bold text-[25px] md:text-[46px]  mb-[15px]">
+          Benefits to Your{""}
+          <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-[rgba(106,13,173,1)] to-[rgba(245,91,195,1)]">
+            Business
+          </span>
+        </h1>
+        <p className="text-[15px] md:text-[24px] font-Regular text-center md:px-[350px] px-4">
+          With a dedicated ReliAssist customer service representative, you
+          ensure your customers feel heard, valued, and supported, which fosters
+          loyalty and drives repeat business.
+        </p>
       </div>
     </div>
   );

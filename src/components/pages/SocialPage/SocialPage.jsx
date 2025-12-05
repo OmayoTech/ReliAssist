@@ -1,18 +1,21 @@
 import Footer from "../../layouts/Footer/Footer";
-import Header from "../../layouts/Header/Header";
-import SocialBenefit from "../../SocialBenefit";
-import SocialDelivery from "../../SocialDelivery";
+import ServiceHeader from "../../ServiceHeader";
+
 import SocialHero from "../../SocialHero";
 import SocialSupport from "../../SocialSupport";
+import Started from "../../Started";
+import Testimony from "../../Testimony";
 
 const SocialPage = () => {
   return (
     <div>
-      <Header />
-      <SocialHero />
+      <div className="w-full md:h-[900px] h-[1500px] bg-cover bg-[url('/src/assets/serviceBG.png')] bg-no-repeat md:mb-[10%] mb-0">
+        <ServiceHeader />
+        <SocialHero />
+      </div>
       <SocialSupport />
-      <SocialBenefit />
-      <SocialDelivery />
+      <Testimony />
+      <Started />
       <Footer />
     </div>
   );

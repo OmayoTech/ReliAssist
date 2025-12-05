@@ -1,15 +1,20 @@
 import { useState } from "react";
-import { logo, closeIcon, menuIcon } from "../../../assets";
+import { closeIcon, menuIcon } from "../../../assets";
+import { Reliassist_new } from "../../../assets";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="left-0 right-0 top-0  flex justify-between items-center md:px-[100px] md:py-2 px-4 py-6">
-      <Link to="/home">
-        <img src={logo} alt="" className="w-[62px] cursor-pointer" />
-      </Link>
-      <div className="hidden left-0 right-0 top-0 md:flex justify-end items-center gap-10  py-6 ">
+    <div className="left-0 right-0 top-0  flex justify-center gap-10 items-center mx-auto md:px-[100px] md:py-2 px-4 py-6 ">
+      <div className="hidden left-0 right-0 top-0 mt-8 md:flex justify-end items-center gap-10 px-6 py-3 bg-[#F9FAFB] rounded-[50px]">
+        <Link to="/">
+          <img
+            src={Reliassist_new}
+            alt=""
+            className="w-[100px] cursor-pointer"
+          />
+        </Link>
         <div className="flex items-center justify-center gap-10 text-lg  list-none">
           <Link
             to="/about"
@@ -23,6 +28,12 @@ const Header = () => {
           >
             Services
           </Link>
+          <Link
+            to="/pricing"
+            className="hover:text-primary text-[16px] font-Rale cursor-pointer"
+          >
+            Pricing
+          </Link>
 
           <Link
             to="/contact"
@@ -32,12 +43,19 @@ const Header = () => {
           </Link>
         </div>
         <a href="https://zfrmz.com/igfe5iy9VPWbgkjIaJ5P">
-          <button className="md:py-3 py-2 md:px-12 px-6 font-bold text-white bg-secondary hover:bg-black hover:outline-black text-[16px] font-Rale outline outline-1 outline-primary rounded-md">
+          <button className="md:py-3 py-2 md:px-12 px-6 font-bold text-white bg-secondary hover:bg-black hover:outline-black text-[16px] font-Rale outline outline-1 outline-primary rounded-[50px]">
             Request Talent
           </button>
         </a>
       </div>
-      <div className="block md:hidden">
+      <div className="block md:hidden flex items-center justify-between w-full px-4">
+        <Link to="/">
+          <img
+            src={Reliassist_new}
+            alt=""
+            className="w-[full]   cursor-pointer"
+          />
+        </Link>
         <img
           src={toggle ? closeIcon : menuIcon}
           className="md:hidden block h-6 w-6 cursor-pointer"
@@ -62,7 +80,12 @@ const Header = () => {
             >
               Services
             </Link>
-
+            <Link
+              to="/pricing"
+              className="hover:text-primary text-[16px] font-Rale"
+            >
+              Pricing
+            </Link>
             <Link
               to="/contact"
               className="hover:text-primary text-[16px] font-Rale"

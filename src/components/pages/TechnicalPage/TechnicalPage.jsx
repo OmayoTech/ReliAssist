@@ -1,18 +1,21 @@
 import Footer from "../../layouts/Footer/Footer";
-import Header from "../../layouts/Header/Header";
-import TechnicalBenefit from "../../TechnicalBenefit";
-import TechnicalDelivery from "../../TechnicalDelivery";
+
+import Testimony from "../../Testimony";
 import TechnicalHero from "../../TechnicalHero";
 import TechnicalSupport from "../../TechnicalSupport";
+import Started from "../../Started";
+import ServiceHeader from "../../ServiceHeader";
 
 const TechnicalPage = () => {
   return (
     <div>
-      <Header />
-      <TechnicalHero />
+      <div className="w-full md:h-[900px] h-[1500px] bg-cover bg-[url('/src/assets/serviceBG.png')] bg-no-repeat md:mb-[10%]">
+        <ServiceHeader />
+        <TechnicalHero />
+      </div>
       <TechnicalSupport />
-      <TechnicalBenefit />
-      <TechnicalDelivery />
+      <Testimony />
+      <Started />
       <Footer />
     </div>
   );

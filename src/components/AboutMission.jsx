@@ -1,50 +1,48 @@
-import Mask from "../../src/assets/Mask.png";
-import Mission from "../../src/assets/Mission.png";
-import vision from "../../src/assets/vision.png";
+import mission1 from "../../src/assets/mission1.png";
 
 const AboutMission = () => {
   return (
-    <div className="h-[1150px] md:h-[1080px] bg-[#FDF9FF] py-14 md:mb-[8%] mb-[12%] md:mt-[8%] mt-[14%]">
-      <div className="absolute md:mt-[-3%] mt-[-13%]">
-        <img src={Mask} alt="" className="w-[40px] md:w-[150px] " />
-      </div>
-      <h1 className=" font-Rale font-bold text-[20px] md:text-[32px] text-center md:mb-[15px] mb-[30px]">
-        Our Mission & Vision
-      </h1>
-      <div className="w-full flex-col-reverse flex px-4 md:flex-row md:items-center md:px-[250px] md:basis-1/2 mt-[3%]">
-        <div className="basis-1/2">
-          <img
-            src={Mission}
-            alt=""
-            className="w-full md:w-[400px] md:h-[400px] "
-          />
-        </div>
-        <div className="basis-1/2">
-          <h1 className="font-Rale font-bold text-[20px] md:text-start md:text-[32px] text-center text-secondary mb-2 ">
-            Our <underline className="underline">Mission</underline>
+    <div className="flex flex-col md:flex-row items-center h-[1000px] md:h-[300px] md:px-[150px] px-4 gap-[20px] mb-[70%] md:mb-[20%] ">
+      <div className="">
+        <div className=" h-[279px] bg-[#08848A] rounded-[20px] mb-[20px] md:px-[30px] px-4 py-10  ">
+          <h1 className="md:w-[24%] w-[45%] bg-[#2C8E91]  font-medium text-white text-[18px] md:text-[22px] rounded-[20px] px-6 py-2 mb-10 ">
+            Our Mission
           </h1>
-          <p className="md:text-start text-center font-Rale text-[16px] md:text-[20px] mb-6">
+          <p className="text-[18px] md:text-[22px] text-white font-Regular ">
             To empower businesses of all sizes with seamless, dependable virtual
             assistance that simplifies day-to-day operations.
           </p>
         </div>
-      </div>
-      <div className="w-full flex-col flex px-4 md:flex-row md:items-center md:px-[250px] basis-3/5 md:mt-[3%] mt-[10%]">
-        <div className="basis-3/5">
-          <h1 className="font-Rale font-bold text-[20px] md:text-start md:text-[32px] text-center text-secondary mb-2">
-            Our <underline className="underline">Vision</underline>
+        <div className="  h-[279px] bg-[#370859] rounded-[20px] md:px-[30px] px-4 py-10 ">
+          <h1 className="bg-[#693587] md:w-[22%] w-[43%] text-white  font-medium text-[18px] md:text-[22px] rounded-[20px] px-6 py-2 mb-10 ">
+            Our Vision
           </h1>
-          <p className="md:w-[80%] w-full md:text-start text-center font-Rale text-[16px] md:text-[20px] mb-6">
-            To redefine business support by providing a trusted, flexible
-            solution that adapts to our clients’ needs as they grow.
+          <p className="text-[18px] md:text-[22px] text-white font-regular ">
+            To become a global leader in virtual assistant outsourcing by
+            delivering high-quality, reliable, and cost-effective solutions
           </p>
         </div>
-        <div className="">
-          <img
-            src={vision}
-            alt=""
-            className="w-full md:w-[400px] md:h-[400px] "
-          />
+      </div>
+      <div className="flex flex-col justify-between md:w-[668px] w-[360px] md:h-[580px]  h-[550px]  rounded-[20px] bg-[#2F234F] md:px-[30px] px-4 py-10  ">
+        <div>
+          <h1 className="w-full  font-medium text-white text-[20px] md:text-[22px]  mb-10">
+            Lighten Your Workload
+          </h1>
+          <p className="text-[18px] md:text-[22px] text-white font-regular ">
+            Take the first step toward reclaiming your time and simplifying your
+            workflow. Connect with us and find a reliable virtual assistant
+            tailored to meet your needs.
+          </p>
+        </div>
+        <div className="flex flex-col items-center justify-center ">
+          <img src={mission1} alt="" className="w-[285px]" />
+          <button className="absolute md:mt-[10%] mt-[30%] md:py-3  py-2 md:px-12 px-8  bg-white hover:text-white hover:bg-[#6A0DAD] hover:outline-black text-[16px] font-medium font-san   rounded-[50px] ">
+            <a href="https://zfrmz.com/igfe5iy9VPWbgkjIaJ5P">
+              <li className="list-none font-san text-transparent bg-clip-text bg-gradient-to-r from-[rgba(106,13,173,1)] to-[rgba(245,91,195,1)] hover:text-white">
+                Contact Us
+              </li>
+            </a>
+          </button>
         </div>
       </div>
     </div>

@@ -1,18 +1,21 @@
-import CustomerBenefit from "../../CustomerBenefit";
-import CustomerDelivery from "../../CustomerDelivery";
 import CustomerHero from "../../CustomerHero";
 import CustomerSupport from "../../CustomerSupport";
 import Footer from "../../layouts/Footer/Footer";
-import Header from "../../layouts/Header/Header";
+import ServiceHeader from "../../ServiceHeader";
+
+import Started from "../../Started";
+import Testimony from "../../Testimony";
 
 const CustomerPage = () => {
   return (
     <div>
-      <Header />
-      <CustomerHero />
+      <div className="w-full md:h-[900px] h-[1500px] bg-cover bg-[url('/src/assets/serviceBG.png')] bg-no-repeat md:mb-[10%]">
+        <ServiceHeader />
+        <CustomerHero />
+      </div>
       <CustomerSupport />
-      <CustomerBenefit />
-      <CustomerDelivery />
+      <Testimony />
+      <Started />
       <Footer />
     </div>
   );

@@ -5,6 +5,12 @@
     <link rel="icon" type="image/png" href="/ReliAssist_Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReliAssist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-HLKXWJ6DN5"
@@ -21,6 +27,58 @@
   </head>
   <body>
     <div id="root"></div>
+    <form name="contact" data-netlify="true" hidden>
+      <div>
+        <input type="text" name="name" id="name" placeholder="Name" />
+      </div>
+      <div>
+        <input type="email" name="email" id="email" placeholder="Email" />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="businessName"
+          id="businessName"
+          placeholder="Business Name"
+        />
+      </div>
+      <div>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="aboutUs"
+          id="aboutUs"
+          placeholder="How did you hear about us?"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="reason"
+          id="reason"
+          placeholder="Reason for Enquiry"
+        />
+      </div>
+      <div>
+        <textarea
+          type="message"
+          name="message"
+          id="message"
+          rows="4"
+          placeholder="Tell us about your need"
+        ></textarea>
+      </div>
+      <div>
+        <input
+          type="url"
+          name="url"
+          id="url"
+          placeholder="Website URL/LinkedIn URL"
+        />
+      </div>
+    </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

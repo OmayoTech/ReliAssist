@@ -1,18 +1,20 @@
-import AdminBenefit from "../../AdminBenefit";
-import AdminDelivery from "../../AdminDelivery";
 import AdminHero from "../../AdminHero";
 import AdminSupport from "../../AdminSupport";
 import Footer from "../../layouts/Footer/Footer";
-import Header from "../../layouts/Header/Header";
+import ServiceHeader from "../../ServiceHeader";
+import Started from "../../Started";
+import Testimony from "../../Testimony";
 
 const AdminPage = () => {
   return (
     <div>
-      <Header />
-      <AdminHero />
+      <div className="w-full md:h-[900px] h-[1500px] bg-cover bg-[url('/src/assets/serviceBG.png')] bg-no-repeat md:mb-[10%]">
+        <ServiceHeader />
+        <AdminHero />
+      </div>
       <AdminSupport />
-      <AdminBenefit />
-      <AdminDelivery />
+      <Testimony />
+      <Started />
       <Footer />
     </div>
   );

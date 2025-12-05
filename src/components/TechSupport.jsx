@@ -1,77 +1,107 @@
-import basic from "../../src/assets/basic.png";
-import setup from "../../src/assets/setup.png";
-import system from "../../src/assets/system.png";
-import user from "../../src/assets/user.png";
-import data from "../../src/assets/data.png";
-import ornament_sup from "../../src/assets/ornament_sup.png";
+import {
+  technical1,
+  technical2,
+  technical3,
+  technical4,
+  technical5,
+} from "../assets";
 
 const TechSupport = () => {
   return (
-    <div className="h-[1350px] md:h-[899px] bg-[#310252] py-14 md:mb-[8%] mb-[18%] md:mt-[8%] mt-[18%]">
-      <div className="absolute md:mt-[-3%] mt-[-13%]">
-        <img src={ornament_sup} alt="" className="w-[70px] md:w-[150px] " />
-      </div>
-      <h1 className="text-white font-Rale font-bold text-[16px] md:text-[32px] text-center md:mt-[2%] md:mb-[3px] mb-[15px]">
-        Our Technical Support
+    <div className="md:mb-[12%] md:mt-0 mt-[-60%]">
+      <h1 className="text-center font-bold text-[25px] md:text-[46px]   ">
+        Technical{" "}
+        <span className=" text-transparent bg-clip-text bg-gradient-to-r from-[rgba(106,13,173,1)] to-[rgba(245,91,195,1)]">
+          Support
+        </span>
       </h1>
-      <p className="text-white font-bold font-Rale text-[16px] md:text-[32px] text-center">
-        Services Include:
-      </p>
-      <div className="gap-4 p-4 px-4 md:px-[150px] md:mt-[4%] mt-[2%] ">
-        <div className="flex-row  md:flex w-full gap-4 mb-4 ">
-          <div className="bg-[#F0FFFC]   p-6 rounded-lg w-full md:w-[384px] md:h-[263px]  h-[214px] mb-4 md:mb-0 ">
-            <img src={basic} alt="" className="mb-6 w-[36px] h-[36px]" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              Basic IT Troubleshooting
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Assistance with everyday tech issues, from software bugs to
-              connectivity problems.
-            </p>
+      <div className="flex items-center justify-center px-4">
+        <div className="grid md:grid-cols-2 grid-rows-3 md:gap-20 p-4  md:mt-20 mt-10 text-start">
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={technical1} className="w-[60px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  UI/UX Design
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Designing intuitive and visually appealing user experiences
+                  that drive engagement.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="bg-[#F0FFFC]  p-6 rounded-lg w-full md:w-[384px] md:h-[263px] h-[214px] md:mb-0 mb-4">
-            <img src={setup} alt="" className="mb-6" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              Software Setup & Configuration
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Initial setup and configuration of essential software tools,
-              helping you optimize your tech stack.
-            </p>
+
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={technical2} className="w-[60px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  Web design
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Building responsive and modern websites tailored to your
+                  business needs.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="bg-[#FFF0FC]  p-6 rounded-lg w-full md:w-[384px] md:h-[263px]   h-[214px]">
-            <img src={system} alt="" className="mb-6" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              System & Software Updates
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Managing updates to keep your tools running efficiently and
-              securely.
-            </p>
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={technical3} className="w-[60px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  E-commerce Sites
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Setup and customization of online stores for seamless customer
+                  shopping experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={technical4} className="w-[60px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  Site Optimization
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Improving site performance, speed, and SEO for better
+                  visibility and usability
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="md:w-[500px] w-[360px] h-[] md:h-[180px] border-2 border-white border-b-black md:mb-0 mb-10">
+            <div className="flex items-center  gap-4 mb-4">
+              <img src={technical5} className="w-[60px]" alt="" />
+              <div>
+                <h1 className="w-full  font-bold text-[14px] md:text-[24px]  mb-[4px]">
+                  CMS Solutions
+                </h1>
+                <p className="text-[12px] md:text-[18px] font-Regular">
+                  Setup, management, and support for content management systems
+                  like WordPress, Shopify, and more
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex-row md:flex w-full gap-4 mb-4">
-          <div className="bg-[#FFF0FC]  p-6 rounded-lg  w-full md:w-[588px] md:h-[263px] h-[218px] mb-4">
-            <img src={user} alt="" className="mb-6" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              User Support & Training
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Guiding users on best practices for your software tools and
-              helping them resolve issues independently.
-            </p>
-          </div>
-          <div className="bg-[#FFF0FC]  p-6 rounded-lg  w-full md:w-[588px] md:h-[263px] h-[218px]">
-            <img src={data} alt="" className="mb-6" />
-            <p className="font-Rale font-bold text-[16px] md:text-[18px] mb-2">
-              Data Backup & Recovery Assistance
-            </p>
-            <p className="font-Rale font-Regular text-[16px] md:text-[18px]">
-              Ensuring your data is secure and providing recovery options in
-              case of loss.
-            </p>
-          </div>
-        </div>
+      </div>
+      <div className="mt-[5%]">
+        <h1 className="text-center font-bold text-[25px] md:text-[46px]  mb-[15px]">
+          Benefits to Your{""}
+          <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-[rgba(106,13,173,1)] to-[rgba(245,91,195,1)]">
+            Business
+          </span>
+        </h1>
+        <p className="text-[15px] md:text-[24px] font-Regular text-center md:px-[350px] px-4">
+          With ReliAssist technical support, your digital infrastructure remains
+          efficient, secure, and scalable helping you focus on growth while we
+          handle the tech.
+        </p>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export default {
         secondary: "#6A0DAD", //purple
       },
       fontFamily: {
-        Rale: ["Raleway"],
+        Hele: "Helvetica Neue,san-serif",
       },
     },
   },

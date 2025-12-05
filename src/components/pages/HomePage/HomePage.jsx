@@ -1,5 +1,5 @@
 import HeroSection from "../../HeroSection";
-import Intro from "../../Intro";
+// import Intro from "../../Intro";
 import Support from "../../Support";
 import Services from "../../Services";
 import About from "../../About";
@@ -11,11 +11,11 @@ import Footer from "../../layouts/Footer/Footer";
 const HomePage = () => {
   return (
     <div>
-      <div className="w-full md:h-[770px] h-[890px] bg-[#FDF9FF]">
+      <div className="w-full md:h-[924px] h-[820px] bg-cover bg-[url('/src/assets/new_background.png')] bg-no-repeat mb-[30%]">
         <Header />
         <HeroSection />
       </div>
-      <Intro />
+      {/* <Intro /> */}
       <Support />
       <Services />
       <About />
