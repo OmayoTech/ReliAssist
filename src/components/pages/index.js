@@ -1,0 +1,9 @@
+export { default as HomePage } from "./HomePage";
+export { default as AboutPage } from "./AboutPage";
+export { default as ContactPage } from "./ContactPage";
+export { default as CustomerPage } from "./CustomerPage";
+export { default as PricingPage } from "./PricingPage";
+export { default as ServicePage } from "./ServicePage";
+export { default as SocialPage } from "./SocialPage";
+export { default as TechnicalPage } from "./TechnicalPage";
+export { default as TechPage } from "./TechPage";
