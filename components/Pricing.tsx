@@ -6,7 +6,7 @@ function PricingPlans() {
   const plans = [
     {
       name: "Essential Plan",
-      price: "£260",
+      price: "£440",
       period: "/month",
       features: [
         {
@@ -24,7 +24,7 @@ function PricingPlans() {
     },
     {
       name: "Boost Plan",
-      price: "£360",
+      price: "£800",
       period: "/month",
       features: [
         {
@@ -42,7 +42,7 @@ function PricingPlans() {
     },
     {
       name: "Power Plan",
-      price: "£640",
+      price: "£1440",
       period: "/month",
       features: [
         {
@@ -61,7 +61,7 @@ function PricingPlans() {
     },
     {
       name: "Flex Plan",
-      price: "£1800",
+      price: "£2000",
       period: "/month",
       features: [
         {
