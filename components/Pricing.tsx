@@ -47,7 +47,7 @@ function PricingPlans() {
       features: [
         {
           text: "Dedicated part-time assistant for 40 hours per month",
-          highlight: "part-time assistant",
+          highlight: "",
         },
         { text: "Change your assistant with zero extra cost" },
         { text: "Dedicated Account Manager" },
