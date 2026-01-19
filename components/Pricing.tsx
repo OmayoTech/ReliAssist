@@ -10,7 +10,7 @@ function PricingPlans() {
       period: "/month",
       features: [
         {
-          text: "Dedicated part-time assistant for 10 hours per month",
+          text: "Dedicated part-time assistant for 20 hours per month",
           highlight: "part-time assistant",
         },
         { text: "Change your assistant with zero extra cost" },
@@ -28,7 +28,7 @@ function PricingPlans() {
       period: "/month",
       features: [
         {
-          text: "Dedicated part-time assistant for 20 hours per month",
+          text: "Dedicated part-time assistant for 40 hours per month",
           highlight: "part-time assistant",
         },
         { text: "Change your assistant with zero extra cost" },
@@ -46,7 +46,7 @@ function PricingPlans() {
       period: "/month",
       features: [
         {
-          text: "Dedicated part-time assistant for 40 hours per month",
+          text: "Dedicated part-time assistant for 80 hours per month",
           highlight: "",
         },
         { text: "Change your assistant with zero extra cost" },
@@ -65,7 +65,7 @@ function PricingPlans() {
       period: "/month",
       features: [
         {
-          text: "Dedicated part-time assistant for 40 hours per month",
+          text: "Dedicated part-time assistant for 120 hours per month",
           highlight: "part-time assistant",
         },
         { text: "Multiple VAs handling your business needs" },
