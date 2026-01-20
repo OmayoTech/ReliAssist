@@ -56,7 +56,7 @@ function Contact() {
 
             <div>
               <h3 className="text-sm font-semibold mb-2 text-purple-300">Address</h3>
-              <p className="text-lg">Remote, UK</p>
+              <p className="text-lg">95 Lower Essex, Birmingham United Kingdom</p>
             </div>
           </div>
         </div>
