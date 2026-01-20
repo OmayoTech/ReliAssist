@@ -5,7 +5,7 @@ import Link from "next/link";
 function PricingPlans() {
   const plans = [
     {
-      name: "Essential Plan",
+      name: "Starter Plan",
       price: "£440",
       period: "/month",
       features: [
