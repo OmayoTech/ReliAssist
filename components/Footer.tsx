@@ -22,7 +22,7 @@ interface SocialLink {
 
 const SOCIAL_LINKS: SocialLink[] = [
     {
-        href: "https://www.threads.com/@reliassist?igshid=NTc4MTIwNjQ2YQ==",
+        href: "https://www.threads.com/@reliassist.uk?igshid=NTc4MTIwNjQ2YQ==",
         icon: social1,
         alt: "Threads icon",
     },
@@ -32,7 +32,7 @@ const SOCIAL_LINKS: SocialLink[] = [
         alt: "LinkedIn icon",
     },
     {
-        href: "https://www.instagram.com/reliassist/",
+        href: "https://www.instagram.com/reliassist.uk?igsh=MWQ5NDNqMGV0eTNoNA==",
         icon: social3,
         alt: "Instagram icon",
     },
