@@ -29,7 +29,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
         allow: '/',
       },
-      // Standard search engines
       {
         userAgent: [
           'Googlebot',
