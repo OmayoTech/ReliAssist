@@ -29,6 +29,7 @@ export default function robots(): MetadataRoute.Robots {
         ],
         allow: '/',
       },
+      // Standard search engines
       {
         userAgent: [
           'Googlebot',
@@ -43,3 +44,4 @@ export default function robots(): MetadataRoute.Robots {
     ],
     sitemap: 'https://reliassist.co/sitemap.xml',
   }
+}
