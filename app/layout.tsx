@@ -14,7 +14,7 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "ReliAssist",
-  description: "A ReliAssist Project",
+  description: "ReliAssist",
 };
 
 export default function RootLayout({
