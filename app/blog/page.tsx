@@ -1,11 +1,16 @@
-import ComingSoon from '@/components/ComingSoon'
+"use client";
+import React, { useState } from "react";
+import BlogHero from "@/components/BlogHero";
+import BlogGrid from "@/components/BlogGrid";
 
-const page = () => {
+export default function BlogPage() {
+  const [activeCategory, setActiveCategory] = useState("All");
+
   return (
-    <>
-      <ComingSoon />  
-    </>
-  )
+    <main>
+      <BlogHero activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+      
+      <BlogGrid filterCategory={activeCategory} />
+    </main>
+  );
 }
-
-export default page

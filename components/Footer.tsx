@@ -2,9 +2,7 @@ import React from "react";
 import Link from "next/link"; 
 import Image, { StaticImageData } from "next/image"; 
 
-// --- 1. ASSET IMPORTS ---
 
-// Assuming these are imported assets in a Next.js environment
 import ReliassistNew from "@/public/logo.png"; 
 import social4 from "@/public/social4.svg"; // X
 import social2 from "@/public/social2.png"; // LinkedIn
@@ -12,7 +10,6 @@ import social1 from "@/public/social1.png"; // Threads
 import social3 from "@/public/social3.png"; // Instagram
 
 
-// --- 2. DATA STRUCTURES ---
 
 interface SocialLink {
     href: string;

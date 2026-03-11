@@ -5,8 +5,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PromotionBanner from "@/components/PromotionBanner";
 
-// 1. Rename to 'raleway' for clarity
-// 2. Add 'display: swap' to manage the loading behavior
+
 const raleway = Raleway({
   subsets: ["latin"],
   display: "swap", 
