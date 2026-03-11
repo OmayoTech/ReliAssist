@@ -1,1 +1,1 @@
-export const host = "daniels-blog.hashnode.dev";
+export const host = "reliassist.hashnode.dev";
