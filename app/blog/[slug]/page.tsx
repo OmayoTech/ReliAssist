@@ -1,8 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import { Linkedin, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
-const host = process.env.NEXT_PUBLIC_HASHNODE_HOST;
+import { host } from "@/lib/config";
 
 const MOCK_POST = {
   title: "Building your",
@@ -30,7 +29,6 @@ const MOCK_POST = {
 };
 
 async function getSinglePost(slug: string) {
-  const host = process.env.NEXT_PUBLIC_HASHNODE_HOST;
 
   const query = `
     query PostDetails($host: String!, $slug: String!) {
@@ -61,14 +59,6 @@ async function getSinglePost(slug: string) {
 
     const json = await response.json();
 
-    if (json.errors) {
-      // This will print the EXACT reason in your terminal
-      console.error(
-        "HASHNODE API ERROR:",
-        JSON.stringify(json.errors, null, 2),
-      );
-      return null;
-    }
 
     return json.data.publication.post;
   } catch (err) {

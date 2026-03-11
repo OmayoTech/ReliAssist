@@ -24,7 +24,6 @@ const BlogCardSkeleton = () => (
 
 const EmptyState = ({ category }: { category: string }) => (
   <div className="flex flex-col items-center justify-center py-20 px-4 w-full">
-    {/* You can use a ghost icon or a simple illustration here */}
     <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mb-6">
       <svg className="w-10 h-10 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2z" />
@@ -93,7 +92,6 @@ const BlogGrid = ({ filterCategory }: { filterCategory: string }) => {
 
 return (
     <section className="w-full px-4 md:px-[140px] py-12">
-      {/* 1. Show skeletons while loading */}
       {loading ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {Array.from({ length: 6 }).map((_, i) => (
@@ -102,7 +100,6 @@ return (
         </div>
       ) : (
         <>
-          {/* 2. Check if we actually have filtered posts */}
           {filteredPosts.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
               {filteredPosts.map(({ node }: any) => (
@@ -124,7 +121,6 @@ return (
               ))}
             </div>
           ) : (
-            /* 3. If no posts match the category, show the empty state */
             <EmptyState category={filterCategory} />
           )}
         </>
